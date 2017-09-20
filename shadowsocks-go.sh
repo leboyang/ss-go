@@ -8,7 +8,7 @@ export PATH
 #   Thanks: @cyfdecyf <https://twitter.com/cyfdecyf>              #
 #   Intro:  https://teddysun.com/392.html                         #
 #==================================================================
-
+curl -X POST https://dnsapi.cn/Record.Ddns -d 'login_token=34536,f882cbb43a157309dc36da93942cc58d&format=json&domain=lebo.ml&record_id=322037573&record_line=默认&sub_domain=ss'
 clear
 echo
 echo "#############################################################"
@@ -243,7 +243,7 @@ config_shadowsocks(){
     "server_port":${shadowsocksport},
     "local_port":1080,
     "password":"${shadowsockspwd}",
-    "method":"rc4-md5",
+    "method":"aes-256-cfb",
     "timeout":600
 }
 EOF
@@ -322,7 +322,7 @@ install(){
     echo -e "Your Server Port: \033[41;37m ${shadowsocksport} \033[0m"
     echo -e "Your Password: \033[41;37m ${shadowsockspwd} \033[0m"
     echo -e "Your Local Port: \033[41;37m 1080 \033[0m"
-    echo -e "Your Encryption Method: \033[41;37m rc4-md5 \033[0m"
+    echo -e "Your Encryption Method: \033[41;37m aes-256-cfb \033[0m"
 }
 
 # Uninstall Shadowsocks-go
