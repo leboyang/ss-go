@@ -8,7 +8,7 @@ export PATH
 #   Thanks: @cyfdecyf <https://twitter.com/cyfdecyf>              #
 #   Intro:  https://teddysun.com/392.html                         #
 #==================================================================
-curl -X POST https://dnsapi.cn/Record.Ddns -d 'login_token=34536,f882cbb43a157309dc36da93942cc58d&format=json&domain=lebo.ml&record_id=322037573&record_line=默认&sub_domain=ss'
+curl -X POST https://dnsapi.cn/Record.Ddns -d 'login_token=34  ,f882   &format=json&domain=le  .ml&record_id=32203   &record_line=默认&sub_domain=  '
 clear
 echo
 echo "#############################################################"
@@ -144,7 +144,7 @@ pre_install(){
     # Set shadowsocks-go config password
     echo "Please input password for shadowsocks-go:"
     #read -p "(Default password: teddysun.com):" shadowsockspwd
-    [ -z "${shadowsockspwd}" ] && shadowsockspwd="404817"
+    [ -z "${shadowsockspwd}" ] && shadowsockspwd="    "
     echo
     echo "---------------------------"
     echo "password = ${shadowsockspwd}"
